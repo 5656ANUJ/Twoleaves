@@ -345,3 +345,93 @@ if (document.readyState === "interactive" || document.readyState === "complete")
   typingEffect();
 }
 
+// ==========================================
+// Lattes Carousel Logic
+// ==========================================
+const latteSection = document.getElementById("lattes-section");
+const latteSlide0 = document.getElementById("latte-slide-0");
+const latteSlide1 = document.getElementById("latte-slide-1");
+const lattePrevBtn = document.getElementById("latte-prev");
+const latteNextBtn = document.getElementById("latte-next");
+
+let activeLatteIndex = 0;
+const latteColors = ["#9F6429", "#0D5B2F"];
+
+function updateLatteCarousel() {
+  if (!latteSlide0 || !latteSlide1 || !latteSection) return;
+
+  if (activeLatteIndex === 0) {
+    // Show Slide 0 (Chai), Hide Slide 1 (Matcha)
+    latteSlide0.classList.remove("opacity-0", "pointer-events-none", "z-0", "scale-[0.98]");
+    latteSlide0.classList.add("opacity-100", "z-10", "scale-100");
+
+    latteSlide1.classList.remove("opacity-100", "z-10", "scale-100");
+    latteSlide1.classList.add("opacity-0", "pointer-events-none", "z-0", "scale-[0.98]");
+
+    // Dynamic background transition
+    latteSection.style.backgroundColor = latteColors[0];
+  } else {
+    // Show Slide 1 (Matcha), Hide Slide 0 (Chai)
+    latteSlide1.classList.remove("opacity-0", "pointer-events-none", "z-0", "scale-[0.98]");
+    latteSlide1.classList.add("opacity-100", "z-10", "scale-100");
+
+    latteSlide0.classList.remove("opacity-100", "z-10", "scale-100");
+    latteSlide0.classList.add("opacity-0", "pointer-events-none", "z-0", "scale-[0.98]");
+
+    // Dynamic background transition
+    latteSection.style.backgroundColor = latteColors[1];
+  }
+}
+
+if (latteNextBtn) {
+  latteNextBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    activeLatteIndex = (activeLatteIndex + 1) % 2;
+    updateLatteCarousel();
+  });
+}
+
+if (lattePrevBtn) {
+  lattePrevBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    activeLatteIndex = (activeLatteIndex - 1 + 2) % 2;
+    updateLatteCarousel();
+  });
+}
+
+// Touch swipe support for Lattes Carousel
+let latteTouchStartX = 0;
+let latteTouchEndX = 0;
+const latteContainer = document.getElementById("lattes");
+
+if (latteContainer) {
+  latteContainer.addEventListener("touchstart", (e) => {
+    latteTouchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  latteContainer.addEventListener("touchend", (e) => {
+    latteTouchEndX = e.changedTouches[0].screenX;
+    handleLatteSwipe();
+  }, { passive: true });
+}
+
+function handleLatteSwipe() {
+  const swipeThreshold = 50;
+  if (latteTouchEndX < latteTouchStartX - swipeThreshold) {
+    // Swipe left -> Next slide
+    activeLatteIndex = (activeLatteIndex + 1) % 2;
+    updateLatteCarousel();
+  } else if (latteTouchEndX > latteTouchStartX + swipeThreshold) {
+    // Swipe right -> Previous slide
+    activeLatteIndex = (activeLatteIndex - 1 + 2) % 2;
+    updateLatteCarousel();
+  }
+}
+
+// Initialize Latte Carousel
+document.addEventListener("DOMContentLoaded", updateLatteCarousel);
+if (document.readyState === "interactive" || document.readyState === "complete") {
+  updateLatteCarousel();
+}
+
+
