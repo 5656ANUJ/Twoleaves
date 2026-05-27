@@ -39,3 +39,7 @@
     scrollbar-width: none;
 }
 
+#textbox {
+  transition: max-width 0.3s ease-in-out;
+}
+

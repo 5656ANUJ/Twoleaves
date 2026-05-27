@@ -231,17 +231,57 @@ if (prodSlider && prodPrevBtn && prodNextBtn) {
   // Initial calculation after elements and assets are rendered
   setTimeout(updateProductButtons, 300);
 }
+// Mobile Menu Drawer Logic
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const closeDrawerBtn = document.getElementById("close-drawer-btn");
+const mobileDrawer = document.getElementById("mobile-drawer");
+const drawerBackdrop = document.getElementById("drawer-backdrop");
+const drawerContent = document.getElementById("drawer-content");
+
+function openDrawer() {
+  if (!mobileDrawer) return;
+  mobileDrawer.classList.remove("hidden");
+  setTimeout(() => {
+    if (drawerBackdrop) drawerBackdrop.classList.remove("opacity-0");
+    if (drawerContent) drawerContent.classList.remove("-translate-x-full");
+  }, 10);
+  document.body.style.overflow = "hidden";
+}
+
+function closeDrawer() {
+  if (!mobileDrawer) return;
+  if (drawerBackdrop) drawerBackdrop.classList.add("opacity-0");
+  if (drawerContent) drawerContent.classList.add("-translate-x-full");
+  setTimeout(() => {
+    mobileDrawer.classList.add("hidden");
+  }, 300);
+  document.body.style.overflow = "";
+}
+
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener("click", openDrawer);
+}
+if (closeDrawerBtn) {
+  closeDrawerBtn.addEventListener("click", closeDrawer);
+}
+if (drawerBackdrop) {
+  drawerBackdrop.addEventListener("click", closeDrawer);
+}
+
 const words = ["chai tea", "hot coffee", "iced matcha", "bubble tea"];
 let text = document.getElementById("typing-text");
 let index = 0;
 let textbox = document.querySelector("#textbox");
 
 window.addEventListener("click",(e) => {
-  if (e.target == textbox) {
-    textbox.style.width = "1000px";
+  if (!textbox) return;
+  if (e.target == textbox || textbox.contains(e.target)) {
+    textbox.classList.add("md:max-w-[1000px]");
+    textbox.classList.remove("max-w-[500px]");
   }
   else {
-    textbox.style.width = "500px";
+    textbox.classList.remove("md:max-w-[1000px]");
+    textbox.classList.add("max-w-[500px]");
   }
 })
 
