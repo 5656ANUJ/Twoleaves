@@ -836,7 +836,7 @@
       </div>
     </section>
     <!--our cafe  -->
-    <section>
+<section>
       <div class="w-screen h-[700px] flex  ">
         <div class="w-1/2 h-full flex ">
           <img
@@ -950,6 +950,146 @@
         </div>
       </div>
     </section>
+<!-- journals -->
+
+     <section>
+        <div class="w-full h-auto bg-[#FBF9EB] px-6 sm:px-16 md:px-32 lg:px-40 py-8 md:py-16">
+        <div class="bg-[#F9B101] w-50 py-2 border-2 border-black rounded-xl -rotate-2 reveal">
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-center uppercase">
+            Journals
+          </h1>
+        </div>
+        <div>
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-left font-serif mt-5 mb-10 md:mb-20 leading-tight reveal delay-100 ">
+            A community steeped in curiosity. Explore
+recipes, culture, and everyday tea wisdom.
+          </h1>
+        </div>
+      </div>
+
+      <div class="relative w-full h-auto bg-[#FBF9EB] px-6 sm:px-16  mt-10">
+        <!-- Prev Button -->
+        <button id="journalPrevBtn" class="absolute left-2 md:left-28 top-[240px] -translate-y-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-neutral-100 hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer shadow-md" aria-label="Previous slide">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        
+        <!-- Next Button -->
+        <button id="journalNextBtn" class="absolute right-2 md:right-28 top-[240px] -translate-y-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-neutral-100 hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer shadow-md" aria-label="Next slide">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+
+        <!-- Carousel Outer Wrapper -->
+        <div class="overflow-hidden w-full px-2">
+          <!-- Slider Track -->
+          <div id="sliderTrack" class="flex gap-5 transition-transform duration-500 ease-in-out w-max">
+            
+            <!-- Card 1 -->
+            <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between bg-[#2A2857]">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Recipe
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/enjoy_9b280eb3-acdd-47d2-ba91-0d2f259d3d66.svg?v=1774545568&width=750.0" alt="London Fog" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                LONDON FOG EARL GREY LATTE
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Caffeine
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/Two_Leaves_May_25_Shoot-36_16x9_6008ffcb-7380-43d9-b1f6-b1f542f934b0.jpg?v=1773683613&width=600" alt="Matcha Drinks" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                NICE MATCHA DRINKS TO DELIGHT!
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+             <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between bg-[#2A2857]">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Recipe
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/enjoy_9b280eb3-acdd-47d2-ba91-0d2f259d3d66.svg?v=1774545568&width=750.0" alt="London Fog" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                LONDON FOG EARL GREY LATTE
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+             <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between bg-[#2A2857]">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Tea 101
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/chef_s_matcha_mix_9ae88222-5d88-415f-a90d-4cd0e47af7d8.svg?v=1775654273&width=750.0" alt="Loose Leaf" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                5 REASONS TO DRINK LOOSE LEAF TEAS
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree bg-[#2A2857]">
+                Tea 101
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_a1481296-482f-4c15-a022-cb3b312388d1.svg?v=1775656011&width=750.0" alt="Loose Leaf" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                5 REASONS TO DRINK LOOSE LEAF TEAS
+              </div>
+            </div>
+              <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between bg-[#2A2857]">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Tea 101
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/chef_s_matcha_mix_9ae88222-5d88-415f-a90d-4cd0e47af7d8.svg?v=1775654273&width=750.0" alt="Loose Leaf" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                5 REASONS TO DRINK LOOSE LEAF TEAS
+              </div>
+            </div>
+            <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree bg-[#2A2857]">
+                Tea 101
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_a1481296-482f-4c15-a022-cb3b312388d1.svg?v=1775656011&width=750.0" alt="Loose Leaf" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                5 REASONS TO DRINK LOOSE LEAF TEAS
+              </div>
+            </div>
+            <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Tea 101
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/Two_Leaves_May_25_Shoot-24_SQ.jpg?v=1775656199&width=750.0" alt="Loose Leaf" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                5 REASONS TO DRINK LOOSE LEAF TEAS
+              </div>
+            </div>
+            <div class="card w-80 h-120 border-2 border-black rounded-2xl overflow-hidden shrink-0 relative flex flex-col justify-between bg-[#2A2857]">
+              <div class="absolute top-4 left-4 bg-white border border-black rounded px-2.5 py-0.5 text-xs font-bold uppercase z-10 font-figtree">
+                Tea 101
+              </div>
+              <img src="https://www.twoleavestea.com/cdn/shop/articles/chef_s_matcha_mix_9ae88222-5d88-415f-a90d-4cd0e47af7d8.svg?v=1775654273&width=750.0" alt="Loose Leaf" class="w-full h-[85%] object-cover">
+              <div class="w-full h-[15%] bg-[#C0DBFF] border-t-2 border-black flex justify-center items-center text-center font-bold px-4 text-xs font-figtree tracking-wide uppercase text-[#232347]">
+                5 REASONS TO DRINK LOOSE LEAF TEAS
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Indicator Bar -->
+        <div class="flex justify-center items-center mt-8 pb-10">
+          <div id="indicatorBar" class="flex gap-2 w-48 h-[3px]">
+            <!-- Dynamic segments from JS -->
+          </div>
+        </div>
+      </div>
+     </section>
 
 
 

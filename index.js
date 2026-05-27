@@ -435,3 +435,92 @@ if (document.readyState === "interactive" || document.readyState === "complete")
 }
 
 
+
+// ==========================================
+// Journals Carousel Logic
+// ==========================================
+const journalTrack = document.getElementById('sliderTrack');
+const journalPrevBtn = document.getElementById('journalPrevBtn');
+const journalNextBtn = document.getElementById('journalNextBtn');
+const journalIndicatorBar = document.getElementById('indicatorBar');
+const journalCards = document.querySelectorAll('.card');
+
+if (journalTrack && journalIndicatorBar && journalCards.length > 0) {
+  const totalJournalCards = journalCards.length;
+  let journalCardsVisible = getJournalCardsVisible();
+  let maxJournalIndex = totalJournalCards - journalCardsVisible;
+  let currentJournalIndex = 0;
+
+  function getJournalCardsVisible() {
+    if (window.innerWidth < 640) return 1;    // Mobile
+    if (window.innerWidth < 768) return 2;    // sm
+    if (window.innerWidth < 1024) return 3;   // md
+    return 4;                                 // lg (Desktop)
+  }
+
+  function buildJournalIndicators() {
+    journalIndicatorBar.innerHTML = '';
+    const totalSegments = Math.ceil(totalJournalCards / journalCardsVisible);
+    
+    for (let i = 0; i < totalSegments; i++) {
+      const segment = document.createElement('div');
+      segment.className = `flex-1 h-[3px] rounded-sm transition-all duration-300 ${i === 0 ? 'bg-[#232347]' : 'bg-gray-300'}`;
+      journalIndicatorBar.appendChild(segment);
+    }
+  }
+
+  function updateJournalSlider() {
+    const cardWidth = journalCards[0].getBoundingClientRect().width;
+    const gap = 20; // matching gap-5 (20px)
+    
+    journalTrack.style.transform = `translateX(-${(cardWidth + gap) * currentJournalIndex}px)`;
+    
+    const currentSegment = Math.floor(currentJournalIndex / journalCardsVisible);
+    const segments = journalIndicatorBar.children;
+    
+    Array.from(segments).forEach((seg, index) => {
+      if (index === currentSegment) {
+        seg.classList.replace('bg-gray-300', 'bg-[#232347]');
+      } else {
+        seg.classList.replace('bg-[#232347]', 'bg-gray-300');
+      }
+    });
+  }
+
+  if (journalNextBtn) {
+    journalNextBtn.addEventListener('click', () => {
+      if (currentJournalIndex < maxJournalIndex) {
+        currentJournalIndex = Math.min(currentJournalIndex + journalCardsVisible, maxJournalIndex);
+      } else {
+        currentJournalIndex = 0;
+      }
+      updateJournalSlider();
+    });
+  }
+
+  if (journalPrevBtn) {
+    journalPrevBtn.addEventListener('click', () => {
+      if (currentJournalIndex > 0) {
+        currentJournalIndex = Math.max(currentJournalIndex - journalCardsVisible, 0);
+      } else {
+        currentJournalIndex = maxJournalIndex;
+      }
+      updateJournalSlider();
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    const oldVisible = journalCardsVisible;
+    journalCardsVisible = getJournalCardsVisible();
+    if (oldVisible !== journalCardsVisible) {
+      maxJournalIndex = totalJournalCards - journalCardsVisible;
+      if (currentJournalIndex > maxJournalIndex) currentJournalIndex = maxJournalIndex;
+      buildJournalIndicators();
+      updateJournalSlider();
+    }
+  });
+
+  // Initialize
+  buildJournalIndicators();
+  updateJournalSlider();
+}
