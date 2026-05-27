@@ -14,17 +14,27 @@
       >
         <p>Free US shipping for orders over $75</p>
       </div>
-      <div class="px-4 md:px-10 mt-8 md:mt-10 w-full absolute top-0 left-0 z-10">
+      <div
+        class="px-4 md:px-10 mt-8 md:mt-10 w-full absolute top-0 left-0 z-10"
+      >
         <nav
           class="flex flex-row justify-between items-center w-full h-16 md:h-20 px-4 md:px-5 border-2 border-black rounded-xl bg-white relative z-10"
         >
           <!-- Left Side: Desktop links / Hamburger menu button -->
           <div class="flex items-center">
             <div class="hidden lg:block">
-              <ul class="flex gap-5 items-center font-figtree font-medium text-black">
-                <li class="cursor-pointer hover:text-[#2A2857] transition">Shop</li>
-                <li class="cursor-pointer hover:text-[#2A2857] transition">Learn</li>
-                <li class="cursor-pointer hover:text-[#2A2857] transition">Reviews</li>
+              <ul
+                class="flex gap-5 items-center font-figtree font-medium text-black"
+              >
+                <li class="cursor-pointer hover:text-[#2A2857] transition">
+                  Shop
+                </li>
+                <li class="cursor-pointer hover:text-[#2A2857] transition">
+                  Learn
+                </li>
+                <li class="cursor-pointer hover:text-[#2A2857] transition">
+                  Reviews
+                </li>
               </ul>
             </div>
             <!-- Hamburger button visible on mobile/tablet -->
@@ -51,7 +61,9 @@
           </div>
 
           <!-- Logo Centered Perfectly -->
-          <div class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center">
+          <div
+            class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center"
+          >
             <img
               src="https://www.twoleavestea.com/cdn/shop/files/Twoleaves_logo.svg?v=1768205424&width=420"
               alt="Twoleaves Logo"
@@ -61,13 +73,28 @@
 
           <!-- Right Side: Account links / Cart -->
           <div class="flex gap-5 items-center">
-            <ul class="hidden lg:flex gap-5 items-center font-figtree font-medium text-black">
-              <li class="cursor-pointer hover:text-[#2A2857] transition">My Account</li>
-              <li class="cursor-pointer hover:text-[#2A2857] transition">Cafe & wholesale</li>
-              <li class="cursor-pointer hover:text-[#2A2857] transition">Partners</li>
-              <li class="cursor-pointer hover:text-[#2A2857] transition">Tea Journal</li>
+            <ul
+              class="hidden lg:flex gap-5 items-center font-figtree font-medium text-black"
+            >
+              <li class="cursor-pointer hover:text-[#2A2857] transition">
+                My Account
+              </li>
+              <li class="cursor-pointer hover:text-[#2A2857] transition">
+                Cafe & wholesale
+              </li>
+              <li class="cursor-pointer hover:text-[#2A2857] transition">
+                Partners
+              </li>
+              <li class="cursor-pointer hover:text-[#2A2857] transition">
+                Tea Journal
+              </li>
             </ul>
-            <a href="#" class="hover:scale-105 active:scale-95 transition" aria-label="Cart">
+            <a
+              href="#"
+              id="cart-btn"
+              class="hover:scale-105 active:scale-95 transition relative flex items-center justify-center"
+              aria-label="Cart"
+            >
               <svg
                 width="22"
                 height="31"
@@ -84,6 +111,7 @@
                   stroke="#201C1A"
                 ></path>
               </svg>
+              <span id="cart-badge" class="absolute -top-1 -right-2 bg-[#2A2857] text-[#FBF9EB] text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full scale-0 transition-transform duration-200">0</span>
             </a>
           </div>
         </nav>
@@ -103,7 +131,9 @@
         class="absolute top-0 left-0 h-full w-[280px] sm:w-[320px] bg-[#FBF9EB] border-r-2 border-black p-6 flex flex-col justify-between transition-transform duration-300 -translate-x-full shadow-2xl z-10"
       >
         <div>
-          <div class="flex items-center justify-between pb-6 border-b border-black/10">
+          <div
+            class="flex items-center justify-between pb-6 border-b border-black/10"
+          >
             <span class="font-serif text-2xl font-bold">Menu</span>
             <button
               id="close-drawer-btn"
@@ -126,18 +156,42 @@
             </button>
           </div>
           <nav class="mt-8">
-            <ul class="flex flex-col gap-6 text-xl font-figtree font-medium text-gray-900">
-              <li><a href="#" class="hover:text-[#2A2857] transition">Shop</a></li>
-              <li><a href="#" class="hover:text-[#2A2857] transition">Learn</a></li>
-              <li><a href="#" class="hover:text-[#2A2857] transition">Reviews</a></li>
-              <li><a href="#" class="hover:text-[#2A2857] transition">My Account</a></li>
-              <li><a href="#" class="hover:text-[#2A2857] transition">Cafe & wholesale</a></li>
-              <li><a href="#" class="hover:text-[#2A2857] transition">Partners</a></li>
-              <li><a href="#" class="hover:text-[#2A2857] transition">Tea Journal</a></li>
+            <ul
+              class="flex flex-col gap-6 text-xl font-figtree font-medium text-gray-900"
+            >
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition">Learn</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition">Reviews</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition"
+                  >My Account</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition"
+                  >Cafe & wholesale</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition">Partners</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#2A2857] transition"
+                  >Tea Journal</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="pt-6 border-t border-black/10 text-sm text-gray-600 font-figtree">
+        <div
+          class="pt-6 border-t border-black/10 text-sm text-gray-600 font-figtree"
+        >
           <p>Free US shipping for orders over $75</p>
         </div>
       </div>
@@ -158,17 +212,23 @@
             "
           >
             <!-- Content -->
-            <div class="relative z-10 left-6 top-36 sm:left-12 sm:top-48 md:left-20 md:top-60 text-white px-4 md:px-0">
-              <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl w-full max-w-xs sm:max-w-md md:max-w-2xl font-bold leading-tight">
+            <div
+              class="relative z-10 left-6 top-36 sm:left-12 sm:top-48 md:left-20 md:top-60 text-white px-4 md:px-0"
+            >
+              <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl w-full max-w-xs sm:max-w-md md:max-w-2xl font-bold leading-tight reveal delay-100"
+              >
                 A Cup that fits the moment.
               </h1>
-              <p class="mt-4 text-sm sm:text-base md:text-lg lg:text-xl w-full max-w-xs sm:max-w-md md:max-w-2xl text-justify">
+              <p
+                class="mt-4 text-sm sm:text-base md:text-lg lg:text-xl w-full max-w-xs sm:max-w-md md:max-w-2xl text-justify reveal delay-200"
+              >
                 From compostable whole leaf tea sachets and iced tea to tea
                 lattes and matcha, we’ve got something for everyone.
               </p>
 
               <button
-                class="mt-6 px-8 md:px-15 py-2.5 md:py-3 bg-[#2A2857] text-white text-base md:text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition cursor-pointer"
+                class="mt-6 px-8 md:px-15 py-2.5 md:py-3 bg-[#2A2857] text-white text-base md:text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition cursor-pointer reveal delay-300 btn-brutalist"
               >
                 Shop Now
               </button>
@@ -196,15 +256,19 @@
       <section
         class="w-full h-auto bg-[#FBF9EB] border-2 border-black mb-10 py-12 md:py-30"
       >
-        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-serif px-4 mt-10 md:mt-20 mb-10 md:mb-20 leading-tight">
+        <h1
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-serif px-4 mt-10 md:mt-20 mb-10 md:mb-20 leading-tight reveal"
+        >
           A great cup starts with a careful <br class="hidden sm:inline" />
           pluck-the top two leaves and a bud.
         </h1>
-        <div class="flex justify-center my-10">
+        <div class="flex justify-center my-10 reveal delay-150">
           <div
             class="bg-[#DAAEEA] w-60 sm:w-70 py-2 border-2 border-black rounded-xl -rotate-2"
           >
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-center uppercase">
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-center uppercase"
+            >
               Best Sellers
             </h1>
           </div>
@@ -260,7 +324,7 @@
             class="flex flex-row overflow-x-auto justify-start items-stretch gap-4 md:gap-8 px-4 md:px-10 py-6 no-scrollbar scroll-smooth snap-x snap-mandatory"
           >
             <!-- Card 1 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div class="w-80 shrink-0 flex flex-col snap-start reveal delay-75">
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1EE91] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -293,7 +357,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -321,7 +385,9 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div
+              class="w-80 shrink-0 flex flex-col snap-start reveal delay-150"
+            >
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#FFD884] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -354,7 +420,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -381,7 +447,9 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div
+              class="w-80 shrink-0 flex flex-col snap-start reveal delay-200"
+            >
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#B0E8C1] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -414,7 +482,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -442,7 +510,9 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div
+              class="w-80 shrink-0 flex flex-col snap-start reveal delay-300"
+            >
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1E4F8] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -475,7 +545,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -503,7 +573,7 @@
             </div>
 
             <!-- Card 5 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div class="w-80 shrink-0 flex flex-col snap-start reveal delay-75">
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1EE91] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -536,7 +606,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -564,7 +634,9 @@
             </div>
 
             <!-- Card 6 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div
+              class="w-80 shrink-0 flex flex-col snap-start reveal delay-150"
+            >
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#FFD884] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -597,7 +669,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -625,7 +697,9 @@
             </div>
 
             <!-- Card 7 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div
+              class="w-80 shrink-0 flex flex-col snap-start reveal delay-200"
+            >
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#B0E8C1] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -658,7 +732,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -686,7 +760,9 @@
             </div>
 
             <!-- Card 8 -->
-            <div class="w-80 shrink-0 flex flex-col snap-start">
+            <div
+              class="w-80 shrink-0 flex flex-col snap-start reveal delay-300"
+            >
               <div
                 class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1E4F8] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
@@ -719,7 +795,7 @@
                 />
 
                 <button
-                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10 btn-brutalist"
                 >
                   <span class="text-lg leading-none font-bold">+</span>
                   <span
@@ -760,7 +836,7 @@
           </div>
           <div class="text-center">
             <button
-              class="mt-6 px-15 py-3 bg-[#2A2857] text-white text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition"
+              class="mt-6 px-15 py-3 bg-[#2A2857] text-white text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition btn-brutalist cursor-pointer"
             >
               Explore All Teas
             </button>
@@ -770,22 +846,28 @@
 
       <!-- Discover -->
       <section class="mb-20">
-        <div class="w-full h-auto bg-[#FBF9EB] px-6 sm:px-16 md:px-32 lg:px-60 py-8 md:py-16">
+        <div
+          class="w-full h-auto bg-[#FBF9EB] px-6 sm:px-16 md:px-32 lg:px-60 py-8 md:py-16"
+        >
           <div
-            class="bg-[#FF7F31] w-48 sm:w-50 py-2 border-2 border-black rounded-xl -rotate-2"
+            class="bg-[#FF7F31] w-48 sm:w-50 py-2 border-2 border-black rounded-xl -rotate-2 reveal"
           >
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-center uppercase">
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-center uppercase"
+            >
               Discover
             </h1>
           </div>
           <div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-left font-serif mt-5 mb-10 md:mb-20 leading-tight">
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-left font-serif mt-5 mb-10 md:mb-20 leading-tight reveal delay-100"
+            >
               Let's find a cup that fits the moment. What are you searching for?
             </h1>
           </div>
           <div
             id="textbox"
-            class="flex items-center justify-start w-full max-w-[500px] h-16 md:h-20 border border-neutral-700 rounded-2xl bg-[#fbf9f1] px-6 md:px-8 cursor-pointer"
+            class="flex items-center justify-start w-full max-w-[500px] h-16 md:h-20 border border-neutral-700 rounded-2xl bg-[#fbf9f1] px-6 md:px-8 cursor-pointer reveal delay-150"
           >
             <span
               id="typing-text"
@@ -797,85 +879,89 @@
           </div>
         </div>
         <div class="mt-10 md:mt-20 px-6 sm:px-16 md:px-32 lg:pl-60 lg:pr-30">
-          <p class="text-xs sm:text-sm uppercase tracking-wider text-gray-500 font-semibold">or Explore by vibe....</p>
+          <p
+            class="text-xs sm:text-sm uppercase tracking-wider text-gray-500 font-semibold"
+          >
+            or Explore by vibe....
+          </p>
           <div class="flex items-center justify-start flex-wrap gap-2 mt-5">
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-75"
             >
               A Sweet Treat
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-100"
             >
               Evening unwind
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-150"
             >
               focused & clear
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-200"
             >
               caffeine!
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-75"
             >
               caffeine-free
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-100"
             >
               ceremony-worthy
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-150"
             >
               whole leaf
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-200"
             >
               over ice
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-75"
             >
               lattes
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-100"
             >
               black tea
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-150"
             >
               green tea
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-200"
             >
               herbal tea
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-75"
             >
               organic
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-100"
             >
               barista favorite
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-150"
             >
               clam & cozy
             </div>
             <div
-              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition"
+              class="w-auto h-auto px-3.5 py-2 sm:px-5 sm:py-3 bg-[#DAEAFF] text-base sm:text-2xl md:text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize cursor-pointer hover:bg-[#DAEAFF]/85 transition reveal delay-200"
             >
               fruit forward
             </div>
@@ -884,118 +970,258 @@
       </section>
 
       <!-- Review -->
-      <section class="mb-20 ">
-        <div class="w-full h-auto bg-[#FBF9EB] px-6 sm:px-16 md:px-32 lg:px-60 py-8 md:py-16">
+      <section class="mb-20">
+        <div
+          class="w-full h-auto bg-[#FBF9EB] px-6 sm:px-16 md:px-32 lg:px-60 py-8 md:py-16"
+        >
           <div
-            class="bg-[#73BC25] w-50 py-2 border-2 border-black rounded-xl -rotate-2"
+            class="bg-[#73BC25] w-50 py-2 border-2 border-black rounded-xl -rotate-2 reveal"
           >
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-center uppercase">
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-center uppercase"
+            >
               Reviews
             </h1>
           </div>
           <div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-left font-serif mt-5 mb-10 md:mb-20 leading-tight">
+            <h1
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-left font-serif mt-5 mb-10 md:mb-20 leading-tight reveal delay-100"
+            >
               Loved by tea people everywhere. Here's what they're saying.
             </h1>
           </div>
         </div>
-   <div class="w-full min-h-[60vh] sm:min-h-screen bg-[#FBF9F1] py-8 sm:py-16 px-6 flex items-center justify-start xl:justify-center overflow-x-auto snap-x snap-mandatory scrollbar-none">
-  
-  <div class="flex flex-nowrap xl:grid xl:grid-cols-5 items-stretch gap-5 w-full max-w-[1440px] mx-auto">
-    
-    <div class="flex flex-col justify-between items-center bg-[#F5AF8A] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
-      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
-        <p class="text-2xl sm:text-[30px] md:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide">“The right amount of spice.”</p>
-        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Angelina R.</p>
-      </div>
-      
-      <div class="w-full h-[88px] flex items-center bg-[#EA6D44] rounded-[20px] border border-black p-3 gap-3">
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <img src="./assets/OrganicGreenTea.png" alt="Chai" class="h-14 w-auto object-contain">
-        </div>
-        <div class="h-full w-[1px] bg-black/20"></div>
-        <div class="w-[50%] flex flex-col justify-center pr-1">
-          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Organic Mountain High Chai</p>
-        </div>
-        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer">Shop</button>
-      </div>
-    </div>
+        <div
+          class="w-full min-h-[60vh] sm:min-h-screen bg-[#FBF9F1] py-8 sm:py-16 px-6 flex items-center justify-start xl:justify-center overflow-x-auto snap-x snap-mandatory scrollbar-none"
+        >
+          <div
+            class="flex flex-nowrap xl:grid xl:grid-cols-5 items-stretch gap-5 w-full max-w-[1440px] mx-auto"
+          >
+            <div
+              class="flex flex-col justify-between items-center bg-[#F5AF8A] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always reveal delay-75"
+            >
+              <div
+                class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4"
+              >
+                <p
+                  class="text-2xl sm:text-[30px] md:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide"
+                >
+                  “The right amount of spice.”
+                </p>
+                <p
+                  class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5"
+                >
+                  Angelina R.
+                </p>
+              </div>
 
-    <div class="flex flex-col justify-between items-center bg-[#A6DF77] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
-      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
-        <p class="text-base sm:text-[21px] md:text-[22px] leading-[1.3] font-serif text-neutral-800 tracking-wide">“This drink is incredibly refreshing, especially when served over ice. It’s light, crisp, and instantly cooling, making it perfect for a quick refresh any time of day.”</p>
-        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Jacob K.</p>
-      </div>
-      
-      <div class="w-full h-[88px] flex items-center bg-[#72B635] rounded-[20px] border border-black p-3 gap-3">
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <img src="./assets/OrganicGreenTea.png" alt="Matcha" class="h-14 w-auto object-contain">
-        </div>
-        <div class="h-full w-[1px] bg-black/20"></div>
-        <div class="w-[50%] flex flex-col justify-center pr-1">
-          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Organic Matcha Mint</p>
-        </div>
-        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer">Shop</button>
-      </div>
-    </div>
+              <div
+                class="w-full h-[88px] flex items-center bg-[#EA6D44] rounded-[20px] border border-black p-3 gap-3"
+              >
+                <div class="w-[20%] h-full flex items-center justify-center">
+                  <img
+                    src="./assets/OrganicGreenTea.png"
+                    alt="Chai"
+                    class="h-14 w-auto object-contain"
+                  />
+                </div>
+                <div class="h-full w-[1px] bg-black/20"></div>
+                <div class="w-[50%] flex flex-col justify-center pr-1">
+                  <p
+                    class="text-[11px] font-black uppercase tracking-wider text-black leading-tight"
+                  >
+                    Organic Mountain High Chai
+                  </p>
+                </div>
+                <button
+                  class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer"
+                >
+                  Shop
+                </button>
+              </div>
+            </div>
 
-    <div class="flex flex-col justify-between items-center bg-[#FCD366] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
-      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
-        <p class="text-xl sm:text-[24px] md:text-[25px] leading-[1.25] font-serif text-neutral-800 tracking-wide">“One sip and you can feel the difference—clean energy, rich flavor, and all the good stuff your body loves. Literally liquid GOLD.”</p>
-        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Harrison G.</p>
-      </div>
-      
-      <div class="w-full h-[88px] flex items-center bg-[#FAB216] rounded-[20px] border border-black p-3 gap-3">
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <img src="./assets/OrganicGreenTea.png" alt="Latte" class="h-14 w-auto object-contain">
-        </div>
-        <div class="h-full w-[1px] bg-black/20"></div>
-        <div class="w-[50%] flex flex-col justify-center pr-1">
-          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Two Roots Golden Latte Mix</p>
-        </div>
-        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer">Shop</button>
-      </div>
-    </div>
+            <div
+              class="flex flex-col justify-between items-center bg-[#A6DF77] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always reveal delay-150"
+            >
+              <div
+                class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4"
+              >
+                <p
+                  class="text-base sm:text-[21px] md:text-[22px] leading-[1.3] font-serif text-neutral-800 tracking-wide"
+                >
+                  “This drink is incredibly refreshing, especially when served
+                  over ice. It’s light, crisp, and instantly cooling, making it
+                  perfect for a quick refresh any time of day.”
+                </p>
+                <p
+                  class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5"
+                >
+                  Jacob K.
+                </p>
+              </div>
 
-    <div class="flex flex-col justify-between items-center bg-[#A6DF77] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
-      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
-        <p class="text-2xl sm:text-[30px] md:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide">“Soo tasty and energizing.”</p>
-        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Gracie M.</p>
-      </div>
-      
-      <div class="w-full h-[88px] flex items-center bg-[#72B635] rounded-[20px] border border-black p-3 gap-3">
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <img src="./assets/OrganicGreenTea.png" alt="Green Tea" class="h-14 w-auto object-contain">
-        </div>
-        <div class="h-full w-[1px] bg-black/20"></div>
-        <div class="w-[50%] flex flex-col justify-center pr-1">
-          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Organic Tropical Green Tea</p>
-        </div>
-        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer">Shop</button>
-      </div>
-    </div>
+              <div
+                class="w-full h-[88px] flex items-center bg-[#72B635] rounded-[20px] border border-black p-3 gap-3"
+              >
+                <div class="w-[20%] h-full flex items-center justify-center">
+                  <img
+                    src="./assets/OrganicGreenTea.png"
+                    alt="Matcha"
+                    class="h-14 w-auto object-contain"
+                  />
+                </div>
+                <div class="h-full w-[1px] bg-black/20"></div>
+                <div class="w-[50%] flex flex-col justify-center pr-1">
+                  <p
+                    class="text-[11px] font-black uppercase tracking-wider text-black leading-tight"
+                  >
+                    Organic Matcha Mint
+                  </p>
+                </div>
+                <button
+                  class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer"
+                >
+                  Shop
+                </button>
+              </div>
+            </div>
 
-    <div class="flex flex-col justify-between items-center bg-[#D6C1E4] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
-      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
-        <p class="text-2xl sm:text-[30px] md:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide">“The perfect start to my day.”</p>
-        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Jorge F.</p>
-      </div>
-      
-      <div class="w-full h-[88px] flex items-center bg-[#B294CC] rounded-[20px] border border-black p-3 gap-3">
-        <div class="w-[20%] h-full flex items-center justify-center">
-          <img src="./assets/OrganicGreenTea.png" alt="Jasmine" class="h-16 w-auto object-contain">
-        </div>
-        <div class="h-full w-[1px] bg-black/20"></div>
-        <div class="w-[50%] flex flex-col justify-center pr-1">
-          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Jasmine Petal</p>
-        </div>
-        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer">Shop</button>
-      </div>
-    </div>
+            <div
+              class="flex flex-col justify-between items-center bg-[#FCD366] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always reveal delay-200"
+            >
+              <div
+                class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4"
+              >
+                <p
+                  class="text-xl sm:text-[24px] md:text-[25px] leading-[1.25] font-serif text-neutral-800 tracking-wide"
+                >
+                  “One sip and you can feel the difference—clean energy, rich
+                  flavor, and all the good stuff your body loves. Literally
+                  liquid GOLD.”
+                </p>
+                <p
+                  class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5"
+                >
+                  Harrison G.
+                </p>
+              </div>
 
-  </div>
-</div>
-    
+              <div
+                class="w-full h-[88px] flex items-center bg-[#FAB216] rounded-[20px] border border-black p-3 gap-3"
+              >
+                <div class="w-[20%] h-full flex items-center justify-center">
+                  <img
+                    src="./assets/OrganicGreenTea.png"
+                    alt="Latte"
+                    class="h-14 w-auto object-contain"
+                  />
+                </div>
+                <div class="h-full w-[1px] bg-black/20"></div>
+                <div class="w-[50%] flex flex-col justify-center pr-1">
+                  <p
+                    class="text-[11px] font-black uppercase tracking-wider text-black leading-tight"
+                  >
+                    Two Roots Golden Latte Mix
+                  </p>
+                </div>
+                <button
+                  class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer"
+                >
+                  Shop
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-between items-center bg-[#A6DF77] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always reveal delay-300"
+            >
+              <div
+                class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4"
+              >
+                <p
+                  class="text-2xl sm:text-[30px] md:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide"
+                >
+                  “Soo tasty and energizing.”
+                </p>
+                <p
+                  class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5"
+                >
+                  Gracie M.
+                </p>
+              </div>
+
+              <div
+                class="w-full h-[88px] flex items-center bg-[#72B635] rounded-[20px] border border-black p-3 gap-3"
+              >
+                <div class="w-[20%] h-full flex items-center justify-center">
+                  <img
+                    src="./assets/OrganicGreenTea.png"
+                    alt="Green Tea"
+                    class="h-14 w-auto object-contain"
+                  />
+                </div>
+                <div class="h-full w-[1px] bg-black/20"></div>
+                <div class="w-[50%] flex flex-col justify-center pr-1">
+                  <p
+                    class="text-[11px] font-black uppercase tracking-wider text-black leading-tight"
+                  >
+                    Organic Tropical Green Tea
+                  </p>
+                </div>
+                <button
+                  class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer"
+                >
+                  Shop
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-between items-center bg-[#D6C1E4] w-[280px] xs:w-[310px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always reveal delay-450"
+            >
+              <div
+                class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4"
+              >
+                <p
+                  class="text-2xl sm:text-[30px] md:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide"
+                >
+                  “The perfect start to my day.”
+                </p>
+                <p
+                  class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5"
+                >
+                  Jorge F.
+                </p>
+              </div>
+
+              <div
+                class="w-full h-[88px] flex items-center bg-[#B294CC] rounded-[20px] border border-black p-3 gap-3"
+              >
+                <div class="w-[20%] h-full flex items-center justify-center">
+                  <img
+                    src="./assets/OrganicGreenTea.png"
+                    alt="Jasmine"
+                    class="h-16 w-auto object-contain"
+                  />
+                </div>
+                <div class="h-full w-[1px] bg-black/20"></div>
+                <div class="w-[50%] flex flex-col justify-center pr-1">
+                  <p
+                    class="text-[11px] font-black uppercase tracking-wider text-black leading-tight"
+                  >
+                    Jasmine Petal
+                  </p>
+                </div>
+                <button
+                  class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm cursor-pointer"
+                >
+                  Shop
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

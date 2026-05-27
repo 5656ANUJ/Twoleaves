@@ -292,15 +292,15 @@ async function typingEffect() {
     let currentword = words[index];
 
     // text writing effect
-    for (let i = 0; i < currentword; i++){
-      text.textContent = currentword.substring(0, i);
+    for (let i = 0; i <= currentword.length; i++){
+      if (text) text.textContent = currentword.substring(0, i);
       await delay(150);
     }
 
     await delay(1000);
 
     for (let i = currentword.length; i >= 0; i--) {
-      text.textContent = currentword.substring(0, i);
+      if (text) text.textContent = currentword.substring(0, i);
       await delay(75); // Speed of erasing (usually faster than typing)
     }
     await delay(500);
@@ -309,5 +309,39 @@ async function typingEffect() {
   }
 }
 
-document.addEventListener("DOMContentLoaded" ,typingEffect());
+// Pass function reference instead of executing immediately
+document.addEventListener("DOMContentLoaded", typingEffect);
+
+// Scroll Reveal Animation with IntersectionObserver
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll(".reveal");
+  if (revealElements.length === 0) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px 0px -10% 0px", // Trigger when 10% from bottom of screen
+    threshold: 0.05
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target); // Trigger only once
+      }
+    });
+  }, observerOptions);
+
+  revealElements.forEach(element => {
+    revealObserver.observe(element);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+
+// Fallback if DOM is already fully interactive
+if (document.readyState === "interactive" || document.readyState === "complete") {
+  initScrollReveal();
+  typingEffect();
+}
 
