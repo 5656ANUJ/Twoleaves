@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-reckless: "Reckless Condensed S TRIAL", sans-serif;
+  --font-figtree: "Figtree", sans-serif;
+  --font-midnight: "Midnight Sans RD 12", sans-serif;
+}
+
+@font-face {
+  font-family: 'Reckless Condensed S TRIAL';
+  src: url('./fonts/RecklessCondensedS-TRIAL-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Midnight Sans RD 12';
+  src: url('./fonts/midnight-sans-rd-12-medium-trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+

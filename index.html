@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Tailwind Project</title>
+  </head>
+  <body class="bg-[#FBF9EB]">
+    <!-- Navbar -->
+    <header class="w-full fixed top-0 left-0 z-50">
+      <div
+        class="w-full bg-[#2A2857] flex justify-center items-center text-white absolute z-20"
+      >
+        <p>Free US shipping for orders over $75</p>
+      </div>
+      <div class="px-10 mt-5 w-full absolute top-5">
+        <nav
+          class="flex flex-row justify-between items-center w-full h-20 px-5 border-2 border-black rounded-xl bg-white sticky z-10"
+        >
+          <div>
+            <ul class="flex gap-5 items-center">
+              <li>Shop</li>
+              <li>Learn</li>
+              <li>Reviews</li>
+            </ul>
+          </div>
+          <div class="translate-x-30">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/Twoleaves_logo.svg?v=1768205424&width=420"
+              alt=""
+            />
+          </div>
+          <div class="flex gap-5 align-items-center">
+            <ul class="flex gap-5 align-items-center">
+              <li>My Account</li>
+              <li>Cafe & wholesale</li>
+              <li>Partners</li>
+              <li>Tea Journal</li>
+            </ul>
+            <svg
+              width="22"
+              height="31"
+              viewBox="0 0 22 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.5 10V24.5C21.5 27.5376 19.0376 30 16 30H6C2.96243 30 0.5 27.5376 0.5 24.5V10H21.5Z"
+                stroke="#201C1A"
+              ></path>
+              <path
+                d="M5 9.5V6.5C5 3.18629 7.68629 0.5 11 0.5C14.3137 0.5 17 3.18629 17 6.5V9.5"
+                stroke="#201C1A"
+              ></path>
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="relative w-full h-[93vh] overflow-hidden">
+        <!-- Slider Wrapper -->
+        <div
+          class="flex w-full h-auto overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
+        >
+          <!-- Slide 1 -->
+          <div
+            id="hero-slide-1"
+            class="snap-start shrink-0 w-screen h-screen relative bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;https://www.twoleavestea.com/cdn/shop/files/cere-memorial_matcha_wide.png?v=1779304660&width=1920&quot;);
+            "
+          >
+            <!-- Content -->
+            <div class="relative z-10 left-20 top-40 text-left text-black">
+              <h1 class="text-4xl md:text-6xl lg:text-7xl w-80">
+                Cere-Memorial Day Sale
+              </h1>
+              <p class="mt-4 text-lg md:text-xl max-w-2xl w-115 text-justify">
+                Refresh your summer ritual with organic ceremonial matcha. Enjoy
+                20% off ceremonial matcha tins this Memorial Day weekend.
+              </p>
+              <p class="mt-4 text-lg md:text-xl lg:text-xl max-w-2xl w-140">
+                Use code: <strong>CERE-MEMORIAL-DAY</strong> at checkout and
+                save!
+              </p>
+
+              <p class="mt-4">
+                <em
+                  >Discount valid from Friday, May 22 through Monday, May 25</em
+                >
+              </p>
+
+              <button
+                class="mt-6 px-15 py-3 bg-[#2A2857] text-white text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div
+            id="hero-slide-2"
+            class="snap-start shrink-0 w-screen h-screen relative bg-cover bg-center bg-no-repeat"
+            style="
+              background-image: url(&quot;https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=1920&quot;);
+            "
+          >
+            <!-- Content -->
+            <div class="relative z-10 top-70 left-20 text-white">
+              <h1 class="text-4xl md:text-6xl lg:text-6xl w-80 font-bold">
+                A Cup that fits the moment.
+              </h1>
+              <p class="mt-4 text-lg md:text-xl max-w-2xl w-140 text-justify">
+                From compostable whole leaf tea sachets and iced tea to tea
+                lattes and matcha, we’ve got something for everyone.
+              </p>
+
+              <button
+                class="mt-6 px-15 py-3 bg-[#2A2857] text-white text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition"
+              >
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Arrow -->
+        <a
+          href="#hero-slide-1"
+          class="absolute left-4 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-[#2A2857] hover:text-white hover:border-[#2A2857] hover:scale-110 active:scale-95 transition-all duration-200 shadow-lg"
+          aria-label="Previous Slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </a>
+
+        <!-- Right Arrow -->
+        <a
+          href="#hero-slide-2"
+          class="absolute right-4 top-1/2 -translate-y-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-[#2A2857] hover:text-white hover:border-[#2A2857] hover:scale-110 active:scale-95 transition-all duration-200 shadow-lg"
+          aria-label="Next Slide"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </a>
+
+        <!-- down arrow -->
+      </section>
+      <div
+        class="absolute right-4 bottom-2 z-30 bg-[#2A2857] w-14 h-14 rounded-full flex items-center justify-center p-3 text-white cursor-pointer hover:scale-110 transition shadow-lg"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-full h-full"
+        >
+          <path
+            d="M13.0001 16.1716L18.3641 10.8076L19.7783 12.2218L12.0001 20L4.22192 12.2218L5.63614 10.8076L11.0001 16.1716V4H13.0001V16.1716Z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- featured products -->
+      <section
+        class="w-full h-auto bg-[#FBF9EB] border-2 border-black mb-10 py-30"
+      >
+        <h1 class="text-6xl text-center font-serif mt-20 mb-20">
+          A great cup starts with a careful <br />
+          pluck-the top two leaves and a bud.
+        </h1>
+        <div class="flex justify-center my-10">
+          <div
+            class="bg-[#DAAEEA] w-70 py-2 border-2 border-black rounded-xl -rotate-2"
+          >
+            <h1 class="text-4xl font-extrabold text-center uppercase">
+              Best Sellers
+            </h1>
+          </div>
+        </div>
+        <!-- products -->
+        <div class="relative w-full group px-10">
+          <!-- Left Arrow Button -->
+          <button
+            id="prod-prev"
+            class="absolute left-6 top-[170px] -translate-y-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-[#2A2857] hover:text-white hover:border-[#2A2857] hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer shadow-md opacity-0 pointer-events-none"
+            aria-label="Previous products"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+
+          <!-- Right Arrow Button -->
+          <button
+            id="prod-next"
+            class="absolute right-6 top-[170px] -translate-y-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full border-2 border-black bg-white text-black hover:bg-[#2A2857] hover:text-white hover:border-[#2A2857] hover:scale-110 active:scale-95 transition-all duration-200 cursor-pointer shadow-md"
+            aria-label="Next products"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="2.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+
+          <div
+            id="product-slider"
+            class="flex flex-row overflow-x-auto justify-start items-stretch gap-8 px-10 py-6 no-scrollbar scroll-smooth snap-x snap-mandatory"
+          >
+            <!-- Card 1 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1EE91] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Tea Sachets
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    4.71 (84)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/OrganicGreenTea.png"
+                  alt="Organic Tropical Green Tea"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Organic Tropical Green Tea
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  From $11.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  Our Organic Tropical Green is a fruity and fun take on a
+                  classic green tea.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#FFD884] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Gift & Samplers
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    5 (2)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/Gift & Samplers.png"
+                  alt="Herbal Tea Trio"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Herbal tea trio
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  $33.30
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  A trio of soothing herbal teas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#B0E8C1] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Naked Sachets
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    5 (11)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/OrganicGreenTea.png"
+                  alt="Organic Peppermint - 50 Naked Tea Sachets"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Organic Peppermint - 50 Naked Tea Sachets
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  $21.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  Our organic peppermint tea is made from peppermint grown in
+                  Washington State.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1E4F8] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Gift & Samplers
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    4.85 (41)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/OrganicGreenTea.png"
+                  alt="Classic Bamboo Tea Chest"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Classic Bamboo Tea Chest
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  $42.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  This 6-slot bamboo box offers a sampling of eight sachets each
+                  of six of our best selling teas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1EE91] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Latte Mix
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    4.41 (22)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/Gift & Samplers.png"
+                  alt="Nice Matcha Tea Latte Mix"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Nice Matcha Tea Latte Mix
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  From $12.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  Our Nice Matcha is a lightly sweetened powdered mix meant for
+                  making tea lattes simple.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#FFD884] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Latte Mix
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    4.24 (17)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/Gift & Samplers.png"
+                  alt="Nice Chai Tea Latte Mix"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Nice Chai Tea Latte Mix
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  From $12.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  Our Nice Chai is a not too sweet, not too spicy, powdered
+                  latte mix meant for making tea lattes simple.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#B0E8C1] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Tea Sachets
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    4.79 (108)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/OrganicGreenTea.png"
+                  alt="Organic Mountain High Chai Tea"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Organic Mountain High Chai Tea
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  From $11.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  An ode to our Rocky Mountain roots, our organic Mountain High
+                  Chai takes your tastebuds down a spice-filled ski slope.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="w-80 shrink-0 flex flex-col snap-start">
+              <div
+                class="relative w-full h-[320px] border-2 border-black rounded-2xl bg-[#C1E4F8] p-4 flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div class="flex justify-between w-full items-start z-10">
+                  <div
+                    class="px-3 py-1 bg-white text-xs text-center font-bold uppercase rounded-[8px] border-2 border-black tracking-wide font-figtree"
+                  >
+                    Naked Sachets
+                  </div>
+                  <div
+                    class="flex items-center gap-1 font-bold text-xs text-black font-figtree mt-1"
+                  >
+                    <svg
+                      class="w-3.5 h-3.5 fill-black inline"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+                      ></path>
+                    </svg>
+                    4.56 (41)
+                  </div>
+                </div>
+
+                <img
+                  src="./assets/Gift & Samplers.png"
+                  alt="Organic Earl Grey - 50 Naked Tea Sachets"
+                  class="absolute inset-0 m-auto w-52 h-52 object-contain transition-transform duration-300 hover:scale-105"
+                />
+
+                <button
+                  class="absolute bottom-4 right-4 bg-white border-2 border-black rounded-[12px] w-[52px] h-[52px] flex flex-col items-center justify-center font-figtree font-extrabold hover:bg-gray-100 hover:scale-105 active:scale-95 transition-all duration-200 cursor-pointer shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] z-10"
+                >
+                  <span class="text-lg leading-none font-bold">+</span>
+                  <span
+                    class="text-[9px] uppercase tracking-wide leading-none mt-0.5"
+                    >Add</span
+                  >
+                </button>
+              </div>
+              <div class="mt-4 flex flex-col gap-1.5 px-1">
+                <h2
+                  class="font-reckless text-2xl text-gray-900 leading-snug font-normal hover:text-[#2A2857] transition-colors cursor-pointer capitalize"
+                >
+                  Organic Earl Grey - 50 Naked Tea Sachets
+                </h2>
+                <p class="font-figtree text-sm font-semibold text-gray-900">
+                  $21.95
+                </p>
+                <p
+                  class="font-figtree text-sm text-gray-700 leading-relaxed font-light line-clamp-3"
+                >
+                  Earl Grey's distinctive aroma comes from bergamot - a citrus
+                  fruit about the size of an orange but yellow-green and
+                  slightly pear-shaped.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Progress Indicator -->
+          <div class="flex justify-center items-center mt-6 pb-10">
+            <div class="w-48 h-1.5 bg-[#2A2857]/10 rounded-full relative">
+              <div
+                id="prod-progress"
+                class="absolute top-0 left-0 h-full bg-[#2A2857] rounded-full transition-all duration-100 ease-out"
+                style="width: 25%"
+              ></div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button
+              class="mt-6 px-15 py-3 bg-[#2A2857] text-white text-xl font-normal rounded-full hover:bg-white hover:text-black hover:border-2 hover:border-black transition"
+            >
+              Explore All Teas
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Discover -->
+      <section class="mb-20">
+        <div class="w-full h-auto bg-[#FBF9EB] px-60">
+          <div
+            class="bg-[#FF7F31] w-50 py-2 border-2 border-black rounded-xl -rotate-2"
+          >
+            <h1 class="text-4xl font-extrabold text-center uppercase">
+              Discover
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-6xl text-left font-serif mt-5 mb-20">
+              Let's find a cup that fits the moment. What are you searching for?
+            </h1>
+          </div>
+          <div
+            id="textbox"
+            class="flex items-center justify-start w-[500px] h-20 border border-neutral-700 rounded-2xl bg-[#fbf9f1] px-8"
+          >
+            <span
+              id="typing-text"
+              class="text-3xl font-serif text-neutral-500/70 select-none"
+            ></span>
+            <span
+              class="text-3xl font-serif text-neutral-500/70 animate-pulse ml-0.5"
+            ></span>
+          </div>
+        </div>
+        <div class="mt-20 pl-60 pr-30">
+          <p class="text-xm uppercase">or Explore by vibe....</p>
+          <div class="flex items-center justify-start flex-wrap gap-2 mt-5">
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              A Sweet Treat
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              Evening unwind
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              focused & clear
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              caffeine!
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              caffeine-free
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              ceremony-worthy
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              whole leaf
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              over ice
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              lattes
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              black tea
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              green tea
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              herbal tea
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              organic
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              barista favorite
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              clam & cozy
+            </div>
+            <div
+              class="w-auto h-auto px-5 py-3 bg-[#DAEAFF] text-3xl flex items-center justify-center border border-black rounded-xl font-thin capitalize"
+            >
+              fruit forward
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review -->
+      <section class="mb-20 ">
+        <div class="w-full h-auto bg-[#FBF9EB] px-60">
+          <div
+            class="bg-[#73BC25] w-50 py-2 border-2 border-black rounded-xl -rotate-2"
+          >
+            <h1 class="text-4xl font-extrabold text-center uppercase">
+              Reviews
+            </h1>
+          </div>
+          <div>
+            <h1 class="text-6xl text-left font-serif mt-5 mb-20">
+              Loved by tea people everywhere. Here's what they're saying.
+            </h1>
+          </div>
+        </div>
+   <div class="w-full min-h-screen bg-[#FBF9F1] py-16 px-6 flex items-center justify-start xl:justify-center overflow-x-auto snap-x snap-mandatory scrollbar-none">
+  
+  <div class="flex flex-nowrap xl:grid xl:grid-cols-5 items-stretch gap-5 w-full max-w-[1440px] mx-auto">
+    
+    <div class="flex flex-col justify-between items-center bg-[#F5AF8A] w-[310px] sm:w-[280px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
+      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
+        <p class="text-[30px] sm:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide">“The right amount of spice.”</p>
+        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Angelina R.</p>
+      </div>
+      
+      <div class="w-full h-[88px] flex items-center bg-[#EA6D44] rounded-[20px] border border-black p-3 gap-3">
+        <div class="w-[20%] h-full flex items-center justify-center">
+          <img src="./assets/OrganicGreenTea.png" alt="Chai" class="h-14 w-auto object-contain">
+        </div>
+        <div class="h-full w-[1px] bg-black/20"></div>
+        <div class="w-[50%] flex flex-col justify-center pr-1">
+          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Organic Mountain High Chai</p>
+        </div>
+        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm">Shop</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between items-center bg-[#A6DF77] w-[310px] sm:w-[280px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
+      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
+        <p class="text-[21px] sm:text-[22px] leading-[1.3] font-serif text-neutral-800 tracking-wide">“This drink is incredibly refreshing, especially when served over ice. It’s light, crisp, and instantly cooling, making it perfect for a quick refresh any time of day.”</p>
+        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Jacob K.</p>
+      </div>
+      
+      <div class="w-full h-[88px] flex items-center bg-[#72B635] rounded-[20px] border border-black p-3 gap-3">
+        <div class="w-[20%] h-full flex items-center justify-center">
+          <img src="./assets/OrganicGreenTea.png" alt="Matcha" class="h-14 w-auto object-contain">
+        </div>
+        <div class="h-full w-[1px] bg-black/20"></div>
+        <div class="w-[50%] flex flex-col justify-center pr-1">
+          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Organic Matcha Mint</p>
+        </div>
+        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm">Shop</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between items-center bg-[#FCD366] w-[310px] sm:w-[280px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
+      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
+        <p class="text-[24px] sm:text-[25px] leading-[1.25] font-serif text-neutral-800 tracking-wide">“One sip and you can feel the difference—clean energy, rich flavor, and all the good stuff your body loves. Literally liquid GOLD.”</p>
+        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Harrison G.</p>
+      </div>
+      
+      <div class="w-full h-[88px] flex items-center bg-[#FAB216] rounded-[20px] border border-black p-3 gap-3">
+        <div class="w-[20%] h-full flex items-center justify-center">
+          <img src="./assets/OrganicGreenTea.png" alt="Latte" class="h-14 w-auto object-contain">
+        </div>
+        <div class="h-full w-[1px] bg-black/20"></div>
+        <div class="w-[50%] flex flex-col justify-center pr-1">
+          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Two Roots Golden Latte Mix</p>
+        </div>
+        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm">Shop</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between items-center bg-[#A6DF77] w-[310px] sm:w-[280px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
+      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
+        <p class="text-[30px] sm:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide">“Soo tasty and energizing.”</p>
+        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Gracie M.</p>
+      </div>
+      
+      <div class="w-full h-[88px] flex items-center bg-[#72B635] rounded-[20px] border border-black p-3 gap-3">
+        <div class="w-[20%] h-full flex items-center justify-center">
+          <img src="./assets/OrganicGreenTea.png" alt="Green Tea" class="h-14 w-auto object-contain">
+        </div>
+        <div class="h-full w-[1px] bg-black/20"></div>
+        <div class="w-[50%] flex flex-col justify-center pr-1">
+          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Organic Tropical Green Tea</p>
+        </div>
+        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm">Shop</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-between items-center bg-[#D6C1E4] w-[310px] sm:w-[280px] xl:w-full rounded-[28px] p-6 border border-black/5 shrink-0 snap-center snap-always">
+      <div class="flex-1 flex flex-col justify-center items-center text-center pb-8 pt-4">
+        <p class="text-[30px] sm:text-[32px] leading-[1.15] font-serif text-neutral-800 tracking-wide">“The perfect start to my day.”</p>
+        <p class="text-[13px] tracking-wider text-neutral-700/70 font-medium mt-5">Jorge F.</p>
+      </div>
+      
+      <div class="w-full h-[88px] flex items-center bg-[#B294CC] rounded-[20px] border border-black p-3 gap-3">
+        <div class="w-[20%] h-full flex items-center justify-center">
+          <img src="./assets/OrganicGreenTea.png" alt="Jasmine" class="h-16 w-auto object-contain">
+        </div>
+        <div class="h-full w-[1px] bg-black/20"></div>
+        <div class="w-[50%] flex flex-col justify-center pr-1">
+          <p class="text-[11px] font-black uppercase tracking-wider text-black leading-tight">Jasmine Petal</p>
+        </div>
+        <button class="w-[30%] h-11 bg-white rounded-full border border-black text-sm font-semibold text-black hover:bg-neutral-50 transition-colors duration-200 shrink-0 shadow-sm">Shop</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
